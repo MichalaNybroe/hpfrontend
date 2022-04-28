@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Student Manager</title>
+  <link rel="stylesheet" href="/css/generic.css">
+  <link rel="stylesheet" href="/css/StudentManager.css">
 </head>
 <body>
 <div id="content">
@@ -12,12 +14,11 @@
   <a id="viewAllStudents" href="ShowAllStudents.html">View Students</a>
 
   <form method="post" action="http://localhost:8080/managing/student/all" id="houseForm">
-    <p>View Students from House</p>
-    <input type="text" name="house" id="houseInput" placeholder="ex Gryffindor or G">
-    <input type="submit" value="View Students">
+    <input type="text" name="house" id="houseInput" placeholder="Gryffindor or G" class="inputField">
+    <input type="submit" value="View Students" class="button">
   </form>
 
-  <h2 id="house"></h2>
+  <h2 id="house">Students</h2>
   <div id="StudentsByHouse">
 
 

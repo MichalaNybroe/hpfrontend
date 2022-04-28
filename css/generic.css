@@ -1,4 +1,44 @@
+* {
+  font-family: "Times New Roman";
+}
+
 #logo {
   width: 20%;
   height: auto;
+}
+
+header {
+  background-color: palegoldenrod;
+}
+
+a {
+  background-color: steelblue;
+  border-radius: 5px;
+  color: white;
+  padding: 4px 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  background-color: rgba(70, 130, 180, 0.68);
+}
+
+.button {
+  border-radius: 5px;
+  background-color: steelblue;
+  border: none;
+  color: white;
+  padding: 4px 5px;
+  font-size: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(70, 130, 180, 0.68);
+}
+
+.inputField {
+  padding: 4px 5px;
+  font-size: 18px;
 }

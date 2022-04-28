@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Add Student</title>
-  <link rel="stylesheet" href="css/generic.css">
+  <link rel="stylesheet" href="/css/generic.css">
 </head>
 <body>
 <div id="content">
 
   <form method="post" action="http://localhost:8080/managing/student/add" id="addStudent">
     <label>Register Student</label>
-    <input type="text" placeholder="Firstname" required id="firstname">
-    <input type="text" placeholder="Middlename" id="middlename">
-    <input type="text" placeholder="Lastname" required id="lastname">
-    <input type="text" placeholder="Year of birth" required id="yearOfBirth">
-    <input type="submit">
+    <input type="text" placeholder="Firstname" required id="firstname" class="inputField">
+    <input type="text" placeholder="Middlename" id="middlename" class="inputField">
+    <input type="text" placeholder="Lastname" required id="lastname" class="inputField">
+    <input type="text" placeholder="Year of birth" required id="yearOfBirth" class="inputField">
+    <input type="submit" class="button" value="Register">
   </form>
 
 </div>

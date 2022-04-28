@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Students at Hogwarts</title>
+  <link rel="stylesheet" href="/css/generic.css">
 </head>
 <body>
 <div id="content">
+  <h2>All Students</h2>
+
+  <form method="post" action="" id="searchStudentForm">
+    <label>Search for Student</label>
+    <input type="text" id="inputSearch" placeholder="fx Harry or 2" required class="inputField">
+    <input type="submit" class="button" value="Search">
+  </form>
+
+  <div id="studentsReturned">
+
+
+  </div>
+
+  <h2>All Students</h2>
 
   <div id="AllStudents">
 
@@ -16,5 +31,6 @@
 
 <script src="/js/getStudents/createStudentTemplate.js"></script>
 <script src="/js/getStudents/fetchAllStudents.js"></script>
+<script src="/js/getStudents/fetchIndividuelStudent.js"></script>
 </body>
 </html>
