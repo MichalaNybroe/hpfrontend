@@ -1,6 +1,4 @@
-const allStudents = document.querySelector("#AllStudents");
-
-function createStudentTemplate(student) {
+function createStudentTemplate(student, outerDiv) {
   const div = document.createElement('div');
   div.className = "Student";
 
@@ -35,7 +33,7 @@ function createStudentTemplate(student) {
   schoolYear.className = "StudentSchoolYear";
   schoolYear.innerText = student.schoolYear;
 
-  allStudents.appendChild(div);
+  outerDiv.appendChild(div);
   div.appendChild(image);
   div.appendChild(studentName);
   div.appendChild(id);

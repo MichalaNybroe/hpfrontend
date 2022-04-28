@@ -1,12 +1,15 @@
 const getAllURL = "http://localhost:8080/managing/student/all";
 
-async function showAllStudents() {
-  const students = await fetchAllStudents();
-  students.forEach(student => createStudentTemplate(student));
+showAllStudents(getAllURL).catch(reason => alert(reason));
+
+const allStudents = document.querySelector("#AllStudents");
+
+
+async function showAllStudents(url) {
+  const students = await fetchAllStudents(url);
+  students.forEach(student => createStudentTemplate(student, allStudents));
 }
 
-async function fetchAllStudents() {
-  return (await fetch(getAllURL)).json();
+async function fetchAllStudents(url) {
+  return (await fetch(url)).json();
 }
-
-showAllStudents().catch(reason => alert(reason));
